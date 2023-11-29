@@ -1,11 +1,11 @@
-const form = document.getElementById('form');
-const taskInput = document.getElementById('task');
+const form = document.getElementById('enter');
+const taskInput = document.getElementById('taskAdded');
 const tasks = document.getElementById('tasks');
 
 form.addEventListener('submit', addTask);
 
-function addTask(e){
-    e.preventDefault();
+function addTask(aT){
+    aT.preventDefault();
     if(taskInput.value == '')
     {
         return;
@@ -26,12 +26,12 @@ function addTask(e){
             taskInput.value = '';
 }
 
-function toggleDone(e){
-    const task = e.target.parentNode;
+function toggleDone(aT){
+    const task = aT.target.parentNode;
     task.querySelector('p').classLit.toggle('done')
 }
 
-function removeTask(e){
-    const task = e.target.parentNode;
+function removeTask(aT){
+    const task = aT.target.parentNode;
     tasks.removeChild(task);
 }
