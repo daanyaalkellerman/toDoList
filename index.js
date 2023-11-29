@@ -47,7 +47,6 @@ function addTask(aT) {
     task.querySelector('input[type="checkbox"]').addEventListener('change', toggleDone);
     task.querySelector('button').addEventListener('click', removeTask);
 
-    // Append the new task to the tasks list
     tasks.appendChild(task);
     // clears the input
     taskInput.value = '';
@@ -91,7 +90,6 @@ function loadTasks() {
     if (storedTasks) {
         const taskTexts = JSON.parse(storedTasks);
 
-        // clears the tasks container
         tasks.innerHTML = '';
 
         // makes task element for each stored task
@@ -106,7 +104,6 @@ function loadTasks() {
             task.querySelector('input[type="checkbox"]').addEventListener('change', toggleDone);
             task.querySelector('button').addEventListener('click', removeTask);
 
-            // Append the task to the tasks list
             tasks.appendChild(task);
         });
     }
