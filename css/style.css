@@ -23,7 +23,7 @@ h1{
     color: black;
     margin: 30px 0;
 }
-enter{
+#enter{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +31,7 @@ enter{
     height: 300px;
     width: 400px;
     border-radius: 50px;
-    background: linear-gradient(145deg,white,rgb(4, 120, 4));
+    background: linear-gradient(145deg,whitesmoke,rgb(4, 120, 4));
     box-shadow: 20px 20px 60px rgb(4, 120, 4),-20px -20px 60px whitesmoke;
 }
 
@@ -80,7 +80,7 @@ li{
     height: 50px;
     border-radius: 10px;
     background-color: white;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 li input[type="checkbox"]{
@@ -88,14 +88,14 @@ li input[type="checkbox"]{
 }
 
 li p{
-    font-size: 18px;
+    font-size: 20px;
     margin: 0;
 }
 
 li button{
     border: none;
     outline: none;
-    font-size: 18px;
+    font-size: 20px;
     background-color: transparent;
     color: tomato;
     cursor: pointer;
@@ -109,4 +109,17 @@ li button:hover{
 .done{
     text-decoration: line-through;
     color: burlywood;
+}
+@media (max-width: 400px) {
+    #enter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        height: 250px;
+        width: 300px;
+        border-radius: 50px;
+        background: linear-gradient(145deg,whitesmoke,rgb(4, 120, 4));
+        box-shadow: 20px 20px 60px rgb(4, 120, 4),-20px -20px 60px whitesmoke;
+    }
 }
